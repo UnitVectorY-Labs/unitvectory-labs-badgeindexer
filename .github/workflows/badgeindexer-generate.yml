@@ -1,0 +1,84 @@
+name: Deploy Badge Indexer Generator
+
+# Triggered manually via the "Run workflow" button
+on:
+  # Trigger after the crawl completes
+  workflow_run:
+    workflows: [Automated Badge Indexer Crawl]
+    types: [completed]
+  # Runs on pushes to the default branch
+  push:
+    branches: ["main"]
+  # Manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: read  # Required to clone the repository
+  pages: write    # Allows publishing to GitHub Pages
+  id-token: write # Required for the `actions/deploy-pages@v4`
+
+concurrency:
+  group: generate
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: arc-runner-set
+
+    steps:
+      # Step 1: Checkout the current repository into 'self' folder
+      - name: Checkout current repository
+        uses: actions/checkout@v3
+        with:
+          path: self
+          # Ensures full history is fetched for commit
+          fetch-depth: 0
+
+      # Step 2: Checkout the badgeindexer repository into 'badgeindexer' folder
+      - name: Checkout badgeindexer repository
+        uses: actions/checkout@v3
+        with:
+          repository: UnitVectorY-Labs/badgeindexer
+          path: badgeindexer
+          # Optionally, specify a branch if not default
+          # ref: main
+
+      # Step 3: Set up Go environment
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.25.4' # GOVERSION
+
+      # Step 4: Build the badgeindexer binary
+      - name: Build badgeindexer
+        run: |
+          cd badgeindexer
+          go build -o badgeindexer .
+
+      # Step 6: Run badgeindexer to scan and update the data folder
+      - name: Run badgeindexer
+        run: |
+          cd ./self
+          mkdir templates
+          cp ../badgeindexer/assets/* ./assets/
+          cp ../badgeindexer/templates/* ./templates/
+          cp ../badgeindexer/badgeindexer ./badgeindexer
+          ./badgeindexer --generate
+        # Replace 'YOUR_ORG_NAME' with your actual GitHub organization name
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./self/output  # Match the directory where the static files are generated
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: badgeindexer.unitvectorylabs.com
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

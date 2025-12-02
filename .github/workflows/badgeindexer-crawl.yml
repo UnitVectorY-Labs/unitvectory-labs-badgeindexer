@@ -1,0 +1,80 @@
+name: Automated Badge Indexer Crawl
+
+# Triggered manually via the "Run workflow" button
+on:
+  schedule:
+    - cron: "1 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: arc-runner-set
+
+    steps:
+      # Step 1: Checkout the current repository into 'self' folder
+      - name: Checkout current repository
+        uses: actions/checkout@v3
+        with:
+          path: self
+          # Ensures full history is fetched for commit
+          fetch-depth: 0
+
+      # Step 2: Checkout the badgeindexer repository into 'badgeindexer' folder
+      - name: Checkout badgeindexer repository
+        uses: actions/checkout@v3
+        with:
+          repository: UnitVectorY-Labs/badgeindexer
+          path: badgeindexer
+          # Optionally, specify a branch if not default
+          # ref: main
+
+      # Step 3: Set up Go environment
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.25.4' # GOVERSION
+
+      # Step 4: Build the badgeindexer binary
+      - name: Build badgeindexer
+        run: |
+          cd badgeindexer
+          go build -o badgeindexer .
+
+      # Step 5: Delete the existing data folder in 'self' repository
+      - name: Delete data folder
+        run: |
+          rm -rf self/data
+
+      # Step 6: Run badgeindexer to scan and update the data folder
+      - name: Run badgeindexer
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ORG_NAME: ${{ vars.ORG_NAME }}
+        run: |
+          cd ./self
+          ../badgeindexer/badgeindexer --org=$ORG_NAME --crawl
+        # Replace 'YOUR_ORG_NAME' with your actual GitHub organization name
+
+      # Step 7: Configure Git for committing
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      # Step 8: Commit the updated data folder with a timestamped message
+      - name: Commit changes
+        run: |
+          cd self
+          git add data
+          git commit -m "Updated data on $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+
+      # Step 9: Push the changes back to the repository using git push
+      - name: Push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd self
+          # Update the remote URL to include the token for authentication
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+          # Push the changes to the branch that triggered the workflow
+          git push origin HEAD:${{ github.ref }}

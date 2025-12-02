@@ -1,2 +1,3 @@
 # unitvectory-labs-badgeindexer
-badgeindexer for @UnitVectorY-Labs
+
+[badgeindexer](https://github.com/UnitVectorY-Labs/badgeindexer) for [UnitVectorY-Labs](https://github.com/UnitVectorY-Labs)
