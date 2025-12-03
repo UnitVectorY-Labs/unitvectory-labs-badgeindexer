@@ -3,5 +3,20 @@
   "repository_url": "https://github.com/UnitVectorY-Labs/certsummary",
   "default_branch": "main",
   "readme_found": true,
-  "badges": null
+  "badges": [
+    {
+      "alt_text": "License",
+      "image_url": "https://img.shields.io/badge/license-MIT-blue.svg",
+      "target_url": "https://opensource.org/licenses/MIT",
+      "host_image": "img.shields.io",
+      "host_target": "opensource.org"
+    },
+    {
+      "alt_text": "Active",
+      "image_url": "https://img.shields.io/badge/Status-Active-green",
+      "target_url": "https://guide.unitvectorylabs.com/bestpractices/status/#active",
+      "host_image": "img.shields.io",
+      "host_target": "guide.unitvectorylabs.com"
+    }
+  ]
 }
