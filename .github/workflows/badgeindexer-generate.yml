@@ -28,7 +28,7 @@ jobs:
     steps:
       # Step 1: Checkout the current repository into 'self' folder
       - name: Checkout current repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           path: self
           # Ensures full history is fetched for commit
@@ -36,7 +36,7 @@ jobs:
 
       # Step 2: Checkout the badgeindexer repository into 'badgeindexer' folder
       - name: Checkout badgeindexer repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           repository: UnitVectorY-Labs/badgeindexer
           path: badgeindexer
