@@ -1,0 +1,29 @@
+{
+  "repository": "dotgithubindexer",
+  "repository_url": "https://github.com/UnitVectorY-Labs/dotgithubindexer",
+  "default_branch": "main",
+  "readme_found": true,
+  "badges": [
+    {
+      "alt_text": "License",
+      "image_url": "https://img.shields.io/badge/license-MIT-blue.svg",
+      "target_url": "https://opensource.org/licenses/MIT",
+      "host_image": "img.shields.io",
+      "host_target": "opensource.org"
+    },
+    {
+      "alt_text": "Work In Progress",
+      "image_url": "https://img.shields.io/badge/Status-Work%20In%20Progress-yellow",
+      "target_url": "https://guide.unitvectorylabs.com/bestpractices/status/#work-in-progress",
+      "host_image": "img.shields.io",
+      "host_target": "guide.unitvectorylabs.com"
+    },
+    {
+      "alt_text": "Go Report Card",
+      "image_url": "https://goreportcard.com/badge/github.com/UnitVectorY-Labs/dotgithubindexer",
+      "target_url": "https://goreportcard.com/report/github.com/UnitVectorY-Labs/dotgithubindexer",
+      "host_image": "goreportcard.com",
+      "host_target": "goreportcard.com"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "repository": "valkeypubauditsink",
+  "repository_url": "https://github.com/UnitVectorY-Labs/valkeypubauditsink",
+  "default_branch": "main",
+  "readme_found": true,
+  "badges": [
+    {
+      "alt_text": "License",
+      "image_url": "https://img.shields.io/badge/License-Apache%202.0-blue.svg",
+      "target_url": "https://opensource.org/licenses/Apache-2.0",
+      "host_image": "img.shields.io",
+      "host_target": "opensource.org"
+    },
+    {
+      "alt_text": "Work In Progress",
+      "image_url": "https://img.shields.io/badge/Status-Work%20In%20Progress-yellow",
+      "target_url": "https://guide.unitvectorylabs.com/bestpractices/status/#work-in-progress",
+      "host_image": "img.shields.io",
+      "host_target": "guide.unitvectorylabs.com"
+    }
+  ]
+}

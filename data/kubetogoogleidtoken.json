@@ -1,0 +1,50 @@
+{
+  "repository": "kubetogoogleidtoken",
+  "repository_url": "https://github.com/UnitVectorY-Labs/kubetogoogleidtoken",
+  "default_branch": "main",
+  "readme_found": true,
+  "badges": [
+    {
+      "alt_text": "GitHub release",
+      "image_url": "https://img.shields.io/github/release/UnitVectorY-Labs/kubetogoogleidtoken.svg",
+      "target_url": "https://github.com/UnitVectorY-Labs/kubetogoogleidtoken/releases/latest",
+      "host_image": "img.shields.io",
+      "host_target": "github.com"
+    },
+    {
+      "alt_text": "License",
+      "image_url": "https://img.shields.io/badge/License-Apache%202.0-blue.svg",
+      "target_url": "https://opensource.org/licenses/Apache-2.0",
+      "host_image": "img.shields.io",
+      "host_target": "opensource.org"
+    },
+    {
+      "alt_text": "Active",
+      "image_url": "https://img.shields.io/badge/Status-Active-green",
+      "target_url": "https://guide.unitvectorylabs.com/bestpractices/status/#active",
+      "host_image": "img.shields.io",
+      "host_target": "guide.unitvectorylabs.com"
+    },
+    {
+      "alt_text": "Maven Central",
+      "image_url": "https://img.shields.io/maven-central/v/com.unitvectory/kubetogoogleidtoken",
+      "target_url": "https://central.sonatype.com/artifact/com.unitvectory/kubetogoogleidtoken",
+      "host_image": "img.shields.io",
+      "host_target": "central.sonatype.com"
+    },
+    {
+      "alt_text": "javadoc",
+      "image_url": "https://javadoc.io/badge2/com.unitvectory/kubetogoogleidtoken/javadoc.svg",
+      "target_url": "https://javadoc.io/doc/com.unitvectory/kubetogoogleidtoken",
+      "host_image": "javadoc.io",
+      "host_target": "javadoc.io"
+    },
+    {
+      "alt_text": "codecov",
+      "image_url": "https://codecov.io/gh/UnitVectorY-Labs/kubetogoogleidtoken/graph/badge.svg?token=DvVSkrR8zW",
+      "target_url": "https://codecov.io/gh/UnitVectorY-Labs/kubetogoogleidtoken",
+      "host_image": "codecov.io",
+      "host_target": "codecov.io"
+    }
+  ]
+}

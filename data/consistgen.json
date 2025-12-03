@@ -1,0 +1,50 @@
+{
+  "repository": "consistgen",
+  "repository_url": "https://github.com/UnitVectorY-Labs/consistgen",
+  "default_branch": "main",
+  "readme_found": true,
+  "badges": [
+    {
+      "alt_text": "GitHub release",
+      "image_url": "https://img.shields.io/github/release/UnitVectorY-Labs/consistgen.svg",
+      "target_url": "https://github.com/UnitVectorY-Labs/consistgen/releases/latest",
+      "host_image": "img.shields.io",
+      "host_target": "github.com"
+    },
+    {
+      "alt_text": "License",
+      "image_url": "https://img.shields.io/badge/License-Apache%202.0-blue.svg",
+      "target_url": "https://opensource.org/licenses/Apache-2.0",
+      "host_image": "img.shields.io",
+      "host_target": "opensource.org"
+    },
+    {
+      "alt_text": "Active",
+      "image_url": "https://img.shields.io/badge/Status-Active-green",
+      "target_url": "https://guide.unitvectorylabs.com/bestpractices/status/#active",
+      "host_image": "img.shields.io",
+      "host_target": "guide.unitvectorylabs.com"
+    },
+    {
+      "alt_text": "Maven Central",
+      "image_url": "https://img.shields.io/maven-central/v/com.unitvectory/consistgen",
+      "target_url": "https://central.sonatype.com/artifact/com.unitvectory/consistgen",
+      "host_image": "img.shields.io",
+      "host_target": "central.sonatype.com"
+    },
+    {
+      "alt_text": "javadoc",
+      "image_url": "https://javadoc.io/badge2/com.unitvectory/consistgen/javadoc.svg",
+      "target_url": "https://javadoc.io/doc/com.unitvectory/consistgen",
+      "host_image": "javadoc.io",
+      "host_target": "javadoc.io"
+    },
+    {
+      "alt_text": "codecov",
+      "image_url": "https://codecov.io/gh/UnitVectorY-Labs/consistgen/graph/badge.svg?token=FaZOUbYgks",
+      "target_url": "https://codecov.io/gh/UnitVectorY-Labs/consistgen",
+      "host_image": "codecov.io",
+      "host_target": "codecov.io"
+    }
+  ]
+}

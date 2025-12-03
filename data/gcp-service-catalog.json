@@ -1,0 +1,29 @@
+{
+  "repository": "gcp-service-catalog",
+  "repository_url": "https://github.com/UnitVectorY-Labs/gcp-service-catalog",
+  "default_branch": "main",
+  "readme_found": true,
+  "badges": [
+    {
+      "alt_text": "License",
+      "image_url": "https://img.shields.io/badge/license-MIT-blue.svg",
+      "target_url": "https://opensource.org/licenses/MIT",
+      "host_image": "img.shields.io",
+      "host_target": "opensource.org"
+    },
+    {
+      "alt_text": "Active",
+      "image_url": "https://img.shields.io/badge/Status-Active-green",
+      "target_url": "https://guide.unitvectorylabs.com/bestpractices/status/#active",
+      "host_image": "img.shields.io",
+      "host_target": "guide.unitvectorylabs.com"
+    },
+    {
+      "alt_text": "Go Report Card",
+      "image_url": "https://goreportcard.com/badge/github.com/UnitVectorY-Labs/gcp-service-catalog",
+      "target_url": "https://goreportcard.com/report/github.com/UnitVectorY-Labs/gcp-service-catalog",
+      "host_image": "goreportcard.com",
+      "host_target": "goreportcard.com"
+    }
+  ]
+}
