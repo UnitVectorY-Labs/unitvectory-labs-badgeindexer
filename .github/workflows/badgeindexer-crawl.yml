@@ -3,7 +3,7 @@ name: Automated Badge Indexer Crawl
 # Triggered manually via the "Run workflow" button
 on:
   schedule:
-    - cron: "1 0 * * *"
+    - cron: "0 21 * * 6"
   workflow_dispatch:
 
 jobs:
