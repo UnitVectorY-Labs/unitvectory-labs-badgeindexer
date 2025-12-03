@@ -45,7 +45,7 @@ jobs:
 
       # Step 3: Set up Go environment
       - name: Set up Go
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v6
         with:
           go-version: '1.25.4' # GOVERSION
 
