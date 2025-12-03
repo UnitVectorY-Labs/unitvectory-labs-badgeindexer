@@ -1,0 +1,82 @@
+{
+  "badges": [
+    {
+      "id": "status-active",
+      "pattern": "https://img.shields.io/badge/Status-Active-green",
+      "name": "Active",
+      "category": "Project Status"
+    },
+    {
+        "id": "status-wip",
+        "pattern": "https://img.shields.io/badge/Status-Work%20In%20Progress-yellow",
+        "name": "Work In Progress",
+        "category": "Project Status"
+    },
+    {
+        "id": "status-concept",
+        "pattern": "https://img.shields.io/badge/Status-Concept-white",
+        "name": "Concept",
+        "category": "Project Status"
+    },
+    {
+      "id": "license-apache-2",
+      "pattern": "https://img.shields.io/badge/License-Apache%202.0-blue.svg",
+      "name": "Apache 2.0",
+      "category": "License"
+    },
+    {
+      "id": "license-epl-2",
+      "pattern": "https://img.shields.io/badge/License-EPL%202.0-blue.svg",
+      "name": "EPL 2.0",
+      "category": "License"
+    },
+    {
+      "id": "license-mit",
+      "pattern": "https://img.shields.io/badge/license-MIT-blue.svg",
+      "name": "MIT",
+      "category": "License"
+    },
+    {
+      "id": "codecov",
+      "pattern": "https://codecov.io/gh/{ORG}/{REPO}/.*",
+      "name": "Codecov",
+      "category": "Quality and Code Coverage",
+      "placeholder": "https://img.shields.io/badge/codecov-X%25-5dad3f?logo=codecov"
+    },
+    {
+      "id": "go-report-card",
+      "pattern": "https://goreportcard.com/badge/github.com/{ORG}/{REPO}/.*",
+      "name": "Go Report Card",
+      "category": "Quality and Code Coverage",
+      "placeholder": "https://img.shields.io/badge/go%20report-GRADE-579e3d"
+    },
+    {
+      "id": "archestra",
+      "pattern": "https://archestra.ai/mcp-catalog/api/badge/quality/{ORG}/{REPO}/.*",
+      "name": "Archestra",
+      "category": "Quality and Code Coverage",
+      "placeholder": "https://img.shields.io/badge/Archestra%20Score-Good-turquoise"
+    },
+    {
+      "id": "maven-central",
+      "pattern": "https://img.shields.io/maven-central/v/com.unitvectory/{REPO}/.*",
+      "name": "Maven Central",
+      "category": "Distribution",
+      "placeholder": "https://img.shields.io/badge/maven--central-vX.Y.Z-orange"
+    },
+    {
+      "id": "github-release",
+      "pattern": "https://img.shields.io/github/release/{ORG}/{REPO}/.*",
+      "name": "GitHub Release",
+      "category": "Distribution",
+      "placeholder": "https://img.shields.io/badge/release-vX.Y.Z-blue"
+    },
+    {
+      "id": "javadoc",
+      "pattern": "https://javadoc.io/badge2/com.unitvectory/{REPO}/.*",
+      "name": "Javadoc",
+      "category": "Documentation",
+      "placeholder": "https://img.shields.io/badge/javadoc-vX.Y.Z-5DAD3F"
+    }
+  ]
+}
