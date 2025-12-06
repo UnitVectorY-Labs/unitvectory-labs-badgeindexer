@@ -3,5 +3,27 @@
   "repository_url": "https://github.com/UnitVectorY-Labs/mcp-shopping-list-firestore",
   "default_branch": "main",
   "readme_found": true,
-  "badges": null
+  "badges": [
+    {
+      "alt_text": "License",
+      "image_url": "https://img.shields.io/badge/license-MIT-blue.svg",
+      "target_url": "https://opensource.org/licenses/MIT",
+      "host_image": "img.shields.io",
+      "host_target": "opensource.org"
+    },
+    {
+      "alt_text": "Concept",
+      "image_url": "https://img.shields.io/badge/Status-Concept-white",
+      "target_url": "https://guide.unitvectorylabs.com/bestpractices/status/#concept",
+      "host_image": "img.shields.io",
+      "host_target": "guide.unitvectorylabs.com"
+    },
+    {
+      "alt_text": "Go Report Card",
+      "image_url": "https://goreportcard.com/badge/github.com/UnitVectorY-Labs/mcp-shopping-list-firestore",
+      "target_url": "https://goreportcard.com/report/github.com/UnitVectorY-Labs/mcp-shopping-list-firestore",
+      "host_image": "goreportcard.com",
+      "host_target": "goreportcard.com"
+    }
+  ]
 }
