@@ -59,10 +59,6 @@ jobs:
       - name: Run badgeindexer
         run: |
           cd ./self
-          mkdir assets
-          cp ../badgeindexer/assets/* ./assets/
-          mkdir templates
-          cp ../badgeindexer/templates/* ./templates/
           cp ../badgeindexer/badgeindexer ./badgeindexer
           ./badgeindexer --generate
         # Replace 'YOUR_ORG_NAME' with your actual GitHub organization name
