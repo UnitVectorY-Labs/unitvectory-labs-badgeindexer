@@ -1,13 +1,13 @@
 {
-  "repository": "kube-oidc-gateway",
-  "repository_url": "https://github.com/UnitVectorY-Labs/kube-oidc-gateway",
+  "repository": "kuberollouttrigger-action",
+  "repository_url": "https://github.com/UnitVectorY-Labs/kuberollouttrigger-action",
   "default_branch": "main",
   "readme_found": true,
   "badges": [
     {
       "alt_text": "GitHub release",
-      "image_url": "https://img.shields.io/github/release/UnitVectorY-Labs/kube-oidc-gateway.svg",
-      "target_url": "https://github.com/UnitVectorY-Labs/kube-oidc-gateway/releases/latest",
+      "image_url": "https://img.shields.io/github/release/UnitVectorY-Labs/kuberollouttrigger-action.svg",
+      "target_url": "https://github.com/UnitVectorY-Labs/kuberollouttrigger-action/releases/latest",
       "host_image": "img.shields.io",
       "host_target": "github.com"
     },
@@ -24,13 +24,6 @@
       "target_url": "https://guide.unitvectorylabs.com/bestpractices/status/#active",
       "host_image": "img.shields.io",
       "host_target": "guide.unitvectorylabs.com"
-    },
-    {
-      "alt_text": "Go Report Card",
-      "image_url": "https://goreportcard.com/badge/github.com/UnitVectorY-Labs/kube-oidc-gateway",
-      "target_url": "https://goreportcard.com/report/github.com/UnitVectorY-Labs/kube-oidc-gateway",
-      "host_image": "goreportcard.com",
-      "host_target": "goreportcard.com"
     }
   ]
 }
