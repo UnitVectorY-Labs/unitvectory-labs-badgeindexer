@@ -20,8 +20,8 @@
     },
     {
       "alt_text": "Go Report Card",
-      "image_url": "https://goreportcard.com/badge/github.com/UnitVectorY-Labs/kuberollouttrigger",
-      "target_url": "https://goreportcard.com/report/github.com/UnitVectorY-Labs/kuberollouttrigger",
+      "image_url": "https://goreportcard.com/badge/github.com/UnitVectorY-Labs/cert-observatory",
+      "target_url": "https://goreportcard.com/report/github.com/UnitVectorY-Labs/cert-observatory",
       "host_image": "goreportcard.com",
       "host_target": "goreportcard.com"
     }

@@ -1,0 +1,15 @@
+{
+  "repository": "gowebshot",
+  "repository_url": "https://github.com/UnitVectorY-Labs/gowebshot",
+  "default_branch": "main",
+  "readme_found": true,
+  "badges": [
+    {
+      "alt_text": "gowebshot CLI",
+      "image_url": "./docs/cli.png",
+      "target_url": "cli.png",
+      "host_image": "",
+      "host_target": ""
+    }
+  ]
+}
