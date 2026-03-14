@@ -1,0 +1,7 @@
+{
+  "repository": "docker-llama.cpp-cuda",
+  "repository_url": "https://github.com/UnitVectorY-Labs/docker-llama.cpp-cuda",
+  "default_branch": "main",
+  "readme_found": true,
+  "badges": null
+}
