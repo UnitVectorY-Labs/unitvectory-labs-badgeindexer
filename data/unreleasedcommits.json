@@ -17,13 +17,6 @@
       "target_url": "https://guide.unitvectorylabs.com/bestpractices/status/#active",
       "host_image": "img.shields.io",
       "host_target": "guide.unitvectorylabs.com"
-    },
-    {
-      "alt_text": "Go Report Card",
-      "image_url": "https://goreportcard.com/badge/github.com/UnitVectorY-Labs/unreleasedcommits",
-      "target_url": "https://goreportcard.com/report/github.com/UnitVectorY-Labs/unreleasedcommits",
-      "host_image": "goreportcard.com",
-      "host_target": "goreportcard.com"
     }
   ]
 }

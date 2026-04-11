@@ -17,13 +17,6 @@
       "target_url": "https://guide.unitvectorylabs.com/bestpractices/status/#work-in-progress",
       "host_image": "img.shields.io",
       "host_target": "guide.unitvectorylabs.com"
-    },
-    {
-      "alt_text": "Go Report Card",
-      "image_url": "https://goreportcard.com/badge/github.com/UnitVectorY-Labs/oidcfinder",
-      "target_url": "https://goreportcard.com/report/github.com/UnitVectorY-Labs/oidcfinder",
-      "host_image": "goreportcard.com",
-      "host_target": "goreportcard.com"
     }
   ]
 }

@@ -31,13 +31,6 @@
       "target_url": "https://goreportcard.com/report/github.com/UnitVectorY-Labs/mcp-graphql-forge",
       "host_image": "goreportcard.com",
       "host_target": "goreportcard.com"
-    },
-    {
-      "alt_text": "Trust Score",
-      "image_url": "https://archestra.ai/mcp-catalog/api/badge/quality/UnitVectorY-Labs/mcp-graphql-forge",
-      "target_url": "https://archestra.ai/mcp-catalog/unitvectory-labs__mcp-graphql-forge",
-      "host_image": "archestra.ai",
-      "host_target": "archestra.ai"
     }
   ]
 }
