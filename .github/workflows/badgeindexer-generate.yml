@@ -64,7 +64,7 @@ jobs:
         # Replace 'YOUR_ORG_NAME' with your actual GitHub organization name
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./self/output  # Match the directory where the static files are generated
 
