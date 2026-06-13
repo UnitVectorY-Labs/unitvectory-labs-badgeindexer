@@ -5,6 +5,13 @@
   "readme_found": true,
   "badges": [
     {
+      "alt_text": "GitHub release",
+      "image_url": "https://img.shields.io/github/release/UnitVectorY-Labs/gogitup.svg",
+      "target_url": "https://github.com/UnitVectorY-Labs/gogitup/releases/latest",
+      "host_image": "img.shields.io",
+      "host_target": "github.com"
+    },
+    {
       "alt_text": "License",
       "image_url": "https://img.shields.io/badge/license-MIT-blue.svg",
       "target_url": "https://opensource.org/licenses/MIT",
@@ -12,11 +19,18 @@
       "host_target": "opensource.org"
     },
     {
-      "alt_text": "Work In Progress",
-      "image_url": "https://img.shields.io/badge/Status-Work%20In%20Progress-yellow",
-      "target_url": "https://guide.unitvectorylabs.com/bestpractices/status/#work-in-progress",
+      "alt_text": "Active",
+      "image_url": "https://img.shields.io/badge/Status-Active-green",
+      "target_url": "https://guide.unitvectorylabs.com/bestpractices/status/#active",
       "host_image": "img.shields.io",
       "host_target": "guide.unitvectorylabs.com"
+    },
+    {
+      "alt_text": "Go Report Card",
+      "image_url": "https://goreportcard.com/badge/github.com/UnitVectorY-Labs/gogitup",
+      "target_url": "https://goreportcard.com/report/github.com/UnitVectorY-Labs/gogitup",
+      "host_image": "goreportcard.com",
+      "host_target": "goreportcard.com"
     }
   ]
 }
