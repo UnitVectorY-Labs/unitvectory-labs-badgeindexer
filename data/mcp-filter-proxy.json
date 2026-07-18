@@ -1,16 +1,9 @@
 {
-  "repository": "bulkfilepr",
-  "repository_url": "https://github.com/UnitVectorY-Labs/bulkfilepr",
+  "repository": "mcp-filter-proxy",
+  "repository_url": "https://github.com/UnitVectorY-Labs/mcp-filter-proxy",
   "default_branch": "main",
   "readme_found": true,
   "badges": [
-    {
-      "alt_text": "GitHub release",
-      "image_url": "https://img.shields.io/github/release/UnitVectorY-Labs/bulkfilepr.svg",
-      "target_url": "https://github.com/UnitVectorY-Labs/bulkfilepr/releases/latest",
-      "host_image": "img.shields.io",
-      "host_target": "github.com"
-    },
     {
       "alt_text": "License",
       "image_url": "https://img.shields.io/badge/license-MIT-blue.svg",

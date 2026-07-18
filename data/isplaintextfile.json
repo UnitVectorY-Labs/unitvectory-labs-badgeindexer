@@ -31,13 +31,6 @@
       "target_url": "https://codecov.io/gh/UnitVectorY-Labs/isplaintextfile",
       "host_image": "codecov.io",
       "host_target": "codecov.io"
-    },
-    {
-      "alt_text": "Go Report Card",
-      "image_url": "https://goreportcard.com/badge/github.com/UnitVectorY-Labs/isplaintextfile",
-      "target_url": "https://goreportcard.com/report/github.com/UnitVectorY-Labs/isplaintextfile",
-      "host_image": "goreportcard.com",
-      "host_target": "goreportcard.com"
     }
   ]
 }
