@@ -1,6 +1,6 @@
 {
-  "repository": "mcp-shopping-list-firestore",
-  "repository_url": "https://github.com/UnitVectorY-Labs/mcp-shopping-list-firestore",
+  "repository": "gcp-spot-observatory",
+  "repository_url": "https://github.com/UnitVectorY-Labs/gcp-spot-observatory",
   "default_branch": "main",
   "readme_found": true,
   "badges": [
@@ -12,9 +12,9 @@
       "host_target": "opensource.org"
     },
     {
-      "alt_text": "Concept",
-      "image_url": "https://img.shields.io/badge/Status-Concept-white",
-      "target_url": "https://guide.unitvectorylabs.com/bestpractices/status/#concept",
+      "alt_text": "Work In Progress",
+      "image_url": "https://img.shields.io/badge/Status-Work%20In%20Progress-yellow",
+      "target_url": "https://guide.unitvectorylabs.com/bestpractices/status/#work-in-progress",
       "host_image": "img.shields.io",
       "host_target": "guide.unitvectorylabs.com"
     }
