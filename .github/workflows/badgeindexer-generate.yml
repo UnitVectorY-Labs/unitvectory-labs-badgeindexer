@@ -1,6 +1,7 @@
 name: Deploy Badge Indexer Generator
 
-# Triggered manually via the "Run workflow" button
+# Publish after successful same-repository main crawls, pushes, or manual dispatch.
+# Read current main to include the crawl's data commit; build current tool main.
 on:
   # Trigger after the crawl completes
   workflow_run:
@@ -23,6 +24,7 @@ concurrency:
 
 jobs:
   build:
+    # Failed crawls must not publish; retain push and manual generation.
     if: >-
       github.event_name != 'workflow_run' ||
       (github.event.workflow_run.conclusion == 'success' &&

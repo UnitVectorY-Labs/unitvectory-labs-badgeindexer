@@ -1,6 +1,7 @@
 name: Automated Badge Indexer Crawl
 
-# Refresh weekly, manually, or after successful badgeindexer main CI.
+# Refresh weekly or manually; ghook4action also dispatches after successful
+# badgeindexer push CI on main. Build current tool main, which may be newer than CI.
 on:
   schedule:
     - cron: "0 21 * * 6"
@@ -9,6 +10,7 @@ on:
 permissions:
   contents: write
 
+# Serialize data pushes; repeated dispatches can still repeat crawls.
 concurrency:
   group: badgeindexer-crawl
   cancel-in-progress: false
