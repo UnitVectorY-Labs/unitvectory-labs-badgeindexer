@@ -1,10 +1,17 @@
 name: Automated Badge Indexer Crawl
 
-# Triggered manually via the "Run workflow" button
+# Refresh weekly, manually, or after successful badgeindexer main CI.
 on:
   schedule:
     - cron: "0 21 * * 6"
   workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: badgeindexer-crawl
+  cancel-in-progress: false
 
 jobs:
   audit:
@@ -15,6 +22,7 @@ jobs:
       - name: Checkout current repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          ref: main
           path: self
           # Ensures full history is fetched for commit
           fetch-depth: 0
@@ -25,8 +33,7 @@ jobs:
         with:
           repository: UnitVectorY-Labs/badgeindexer
           path: badgeindexer
-          # Optionally, specify a branch if not default
-          # ref: main
+          ref: main
 
       # Step 3: Set up Go environment
       - name: Set up Go
@@ -76,5 +83,5 @@ jobs:
           cd self
           # Update the remote URL to include the token for authentication
           git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          # Push the changes to the branch that triggered the workflow
-          git push origin "HEAD:${GITHUB_REF}"
+          # Push refreshed data to the publication branch
+          git push origin HEAD:refs/heads/main
