@@ -14,9 +14,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read  # Required to clone the repository
-  pages: write    # Allows publishing to GitHub Pages
-  id-token: write # Required for the `actions/deploy-pages@v4`
+  {}
 
 concurrency:
   group: generate
@@ -24,6 +22,9 @@ concurrency:
 
 jobs:
   build:
+    # Checkout reads the repository; this job does not publish Pages.
+    permissions:
+      contents: read
     # Failed crawls must not publish; retain push and manual generation.
     if: >-
       github.event_name != 'workflow_run' ||
@@ -77,6 +78,10 @@ jobs:
 
   # Deployment job
   deploy:
+    # GitHub Pages deployment requires these permissions.
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: badgeindexer.unitvectorylabs.com
